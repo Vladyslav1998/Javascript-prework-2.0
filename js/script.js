@@ -4,4 +4,8 @@ printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to papier, to wy
 
 let playerMove = 'papier';
 
-pringMessage('Zagrałem ' + playerMove + ', Twoja kolej!')
+printMessage('Zagrałem ' + playerMove + ', Twoja kolej!')
+
+let randomNumber = Math.floor(Math.random() * 3 + 1);
+
+printMessage('Całość to ' + randomNumber);
