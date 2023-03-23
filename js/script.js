@@ -1,4 +1,5 @@
 function playGame(playerInput) {
+   clearMessages();
 
    function getMoveName(argMoveId) {
       if (argMoveId == 1) {
@@ -60,7 +61,7 @@ function playGame(playerInput) {
    //    playerMove = 'nożyce';
    // }
 
-   printMessage('Ruch gracz to: ' + playerMove);
+   printMessage('Ruch gracza to: ' + playerMove);
 
    // Resultat of game
 
@@ -107,3 +108,15 @@ function playGame(playerInput) {
    displayResult(computerMove, playerMove);
 
 }
+
+document.getElementById('play-rock').addEventListener('click', function(){
+   playGame('1');
+});
+
+document.getElementById('play-paper').addEventListener('click', function(){
+   playGame('2');
+});
+
+document.getElementById('play-scissors').addEventListener('click', function(){
+   playGame('3')
+});
